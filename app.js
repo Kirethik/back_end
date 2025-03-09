@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ CORS Config (Ensures Cookies Work)
 app.use(cors({
-    origin: "https://front-awjz3d2n8-kirethiks-projects.vercel.app", // ✅ Update to your frontend URL
+    origin: "https://nss-amrita.vercel.app", // ✅ Update to your frontend URL
     credentials: true
 }));
 
