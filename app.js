@@ -7,7 +7,6 @@ const bcrypt = require("bcryptjs");
 const mongoose = require("mongoose");
 require('dotenv').config();
 
-console.log(process.env.MONGO_URI);
 const { UserCluster, StudentCluster, EventCluster } = require('./DB/models'); // ✅ Import all models
 const router = require('./DB/routes'); // ✅ Import routes
 
@@ -16,7 +15,7 @@ const PORT = process.env.PORT || 5000;
 
 // ✅ CORS Config (Ensures Cookies Work)
 app.use(cors({
-    origin: "http://localhost:3000", // ✅ Update to your frontend URL
+    origin: "https://nss-amrita.vercel.app/", // ✅ Update to your frontend URL
     credentials: true
 }));
 
